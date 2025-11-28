@@ -9,33 +9,14 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Wybierz kategorie przepisu" />
 
-    <Button
-        android:id="@+id/button5"
+    <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="CIASTA" />
-
-    <Button
-        android:id="@+id/button6"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="CIASTECZKA" />
-
-    <Button
-        android:id="@+id/button7"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="NAPOJE" />
-
-    <Button
-        android:id="@+id/button8"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="DESERY" />
+        android:entries="@array/kategorie_string" />
 
     <Button
         android:id="@+id/button"
