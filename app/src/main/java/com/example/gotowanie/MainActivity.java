@@ -1,5 +1,6 @@
 package com.example.gotowanie;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -32,6 +33,8 @@ public class MainActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 view.setBackgroundColor(Color.GRAY);
                 Toast.makeText(MainActivity.this, "Kliknieto element "+(i+1), Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(MainActivity.this, listaPrzepisowActivity.class);
+                startActivity(intent);
             }
         });
     }
