@@ -6,6 +6,7 @@ public class Przepis {
     private int idObrazka;
     private String skladniki;
     private String opis;
+    private int indeks;
 
     public Przepis(String nazwaPrzepisu) {
         this.nazwaPrzepisu = nazwaPrzepisu;
