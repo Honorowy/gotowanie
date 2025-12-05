@@ -1,9 +1,9 @@
 <resources>
     <string name="app_name">gotowanie</string>
     <string-array name="kategorie_string">
-        <item>ciasta</item>
+        <item>ciasto</item>
         <item>ciasteczka</item>
-        <item>desery</item>
+        <item>deser</item>
         <item>napoje</item>
     </string-array>
 </resources>

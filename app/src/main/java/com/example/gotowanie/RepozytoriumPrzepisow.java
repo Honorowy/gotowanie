@@ -20,6 +20,16 @@ public class RepozytoriumPrzepisow {
         wygenerujPrzepisy();
         return przepisy;
     }
+    public static ArrayList<Przepis> zwrocPrzepisZDanejKategorii(String kategoria){
+        wygenerujPrzepisy();
+        ArrayList<Przepis> wybranePrzepisy = new ArrayList<>();
+        for (Przepis przepis:przepisy) {
+            if (przepis.getKategoria().equals(kategoria)){
+                wybranePrzepisy.add(przepis);
+            }
+        }
+        return wybranePrzepisy;
+    }
     public  static ArrayList<Przepis> zwrocPrzepisyWKategorii(){
         ArrayList<Przepis> przepisyKategoria = new ArrayList<>();
         return  przepisyKategoria;

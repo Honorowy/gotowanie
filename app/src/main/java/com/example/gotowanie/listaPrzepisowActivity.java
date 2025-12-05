@@ -28,7 +28,8 @@ public class listaPrzepisowActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        przepisyArrayList = RepozytoriumPrzepisow.zwrocPrzepisy();
+        String wybranaKategoria = getIntent().getStringExtra("KATEGORIA");
+        przepisyArrayList = RepozytoriumPrzepisow.zwrocPrzepisZDanejKategorii(wybranaKategoria);
         listViewPrzepisy = findViewById(R.id.listViewPrzepisy);
         arrayAdapter = new ArrayAdapter<>(listaPrzepisowActivity.this, android.R.layout.simple_list_item_1, przepisyArrayList);
         listViewPrzepisy.setAdapter(arrayAdapter);
